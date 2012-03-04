@@ -134,7 +134,6 @@ instance SearchProblem GameState Action where
 
 getSolutions	:: GameState -> Space Action GameState
 getSolutions = solutions bfs 
-sol =  fst . head . getSolutions $ initialState [5, 7] 1
 
 -- | Formatting result
 cellWidth = 8 :: Int
